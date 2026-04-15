@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomePage">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homepagebg" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home"
+        app:tint="#FFFFFF" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGenerateQR"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="#CC4E9A7B"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewLogs"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewUsers"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="30dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/finalqr" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Generate QR"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cardGenerateQR"
+        app:layout_constraintStart_toStartOf="@id/cardGenerateQR"
+        app:layout_constraintTop_toBottomOf="@id/cardGenerateQR" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewUsers"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="20dp"
+        app:cardBackgroundColor="#CC4E9A7B"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardGenerateQR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardGenerateQR"
+        app:layout_constraintTop_toTopOf="@+id/cardGenerateQR">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="30dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/finalregistration" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textViewUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="View Users"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cardViewUsers"
+        app:layout_constraintStart_toStartOf="@id/cardViewUsers"
+        app:layout_constraintTop_toBottomOf="@id/cardViewUsers" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewLogs"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="#CC275553"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGenerate">
+
+        <ImageButton
+            android:id="@+id/btnAdminViewLogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="30dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/viewlogin" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ride History"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cardViewLogs"
+        app:layout_constraintStart_toStartOf="@id/cardViewLogs"
+        app:layout_constraintTop_toBottomOf="@id/cardViewLogs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

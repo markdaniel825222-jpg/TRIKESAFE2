@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/allbg" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#397B77"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="TRIKE"
+        android:textAlignment="center"
+        android:textColor="#D5ECEC"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="SAFE"
+        android:textAlignment="center"
+        android:textColor="#111212"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="QR CODE Generated!"
+        android:textAlignment="viewStart"
+        android:textColor="#D5ECEC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="239dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#41817E"
+        android:text="Proceed"
+        android:textColor="#2B2D30"
+        android:textStyle="bold"
+        android:typeface="serif"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="783dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="281dp"
+        android:layout_height="257dp"
+        app:srcCompat="@drawable/finalqr"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

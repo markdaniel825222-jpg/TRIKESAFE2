@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TrikeSafe"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1c3178" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Privacy &amp; Consent"
+        android:textSize="16sp"
+        android:textColor="#50C878"
+        android:layout_marginBottom="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:background="#F8F9FA">
+
+        <TextView
+            android:id="@+id/txtTermsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="Welcome to TrikeSafe. By using this application, you agree to the following terms:\n\n1. STUDENT DATA COLLECTION:\nWe collect your Student ID, Name, and Guardian's Mobile Number. This data is used solely to log your commute and send automated SMS notifications to your guardian.\n\n2. DRIVER DATA &amp; CONSENT:\nBy using this app as a Driver, you acknowledge that your Name, Plate Number, and Emergency Contact Number are encoded within the TrikeSafe QR Code. You explicitly consent to this information being transmitted via SMS to the Guardian/Emergency Number registered by any student who scans your QR code.\n\n3. PURPOSE OF DATA SHARING:\nThe sharing of Driver information is strictly for the safety and security of the passenger, allowing guardians to identify the specific vehicle and operator in case of emergencies.\n\n4. REAL-TIME LOGGING:\nYou acknowledge that every confirmed ride records the identity of both the Student and the Driver in the Firebase Firestore database for administrative review and history tracking.\n\n5. DATA RETENTION:\nTrikeSafe does not sell personal data. Information is stored in our secure database and is only accessible to authorized administrators.\n\n6. PROHIBITION OF DECEPTIVE SCANNING:\nStudents are strictly prohibited from scanning photos or digital copies of a Driver's QR code. The TrikeSafe scan must only be performed in person before boarding the vehicle. Attempting to scan a QR code while not physically present to mislead guardians is a violation of the TrikeSafe User Agreement.\n\n7. DISCIPLINARY CONSEQUENCES:\nAny student caught using TrikeSafe to provide false information regarding driver identity or boarding time will face disciplinary consequences.\n\n8. USER ACKNOWLEDGMENT:\nBy clicking 'I Agree', you confirm that you have read these terms and voluntarily consent to the processing and sharing of your personal or professional information as described." />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnDecline"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Decline"
+            android:backgroundTint="#FF4444"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnAgree"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="I Agree"
+            android:backgroundTint="#50C878"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

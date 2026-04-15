@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "897465683093",
+    "project_id": "trikesafe-45b0a",
+    "storage_bucket": "trikesafe-45b0a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897465683093:android:f6c54eb464e46213385f9c",
+        "android_client_info": {
+          "package_name": "com.example.trikesafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdAwiuDGDrCOsBWS2eX10OD-ccrTGnhzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

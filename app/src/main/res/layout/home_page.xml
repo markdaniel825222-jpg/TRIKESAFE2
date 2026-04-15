@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homepagebg" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardAdmin"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#CC275553"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/adminpng" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHistory"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#CC275553"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardAdmin"
+        app:layout_constraintStart_toStartOf="@+id/cardAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/cardAdmin">
+
+        <ImageButton
+            android:id="@+id/imageButtonHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/historyiconwhite" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRegister"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="#CC275553"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardStudentHistory"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <ImageButton
+            android:id="@+id/imageButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="25dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/registration" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardStudentHistory"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="15dp"
+        app:cardBackgroundColor="#CC275553"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        app:strokeColor="#CCFCFDFD"
+        app:strokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardRegister"
+        app:layout_constraintTop_toTopOf="@+id/cardRegister">
+
+        <ImageButton
+            android:id="@+id/imageButtonStudentHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:padding="25dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/historylogs" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cardRegister"
+        app:layout_constraintStart_toStartOf="@id/cardRegister"
+        app:layout_constraintTop_toBottomOf="@id/cardRegister" />
+
+    <TextView
+        android:id="@+id/textStudentHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="My Logs"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/cardStudentHistory"
+        app:layout_constraintStart_toStartOf="@id/cardStudentHistory"
+        app:layout_constraintTop_toBottomOf="@id/cardStudentHistory" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonScan"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="60dp"
+        android:text="SCAN NOW"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#275553"
+        app:cornerRadius="35dp"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegistration">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/mainstudentbg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewTrike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRIKE"
+        android:textColor="#D5ECEC"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSafe"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFE"
+        android:textColor="#111212"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTrike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTrike"
+        app:layout_constraintTop_toTopOf="@+id/textViewTrike" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register as a Student"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FEFEFE"
+        app:layout_constraintTop_toBottomOf="@id/textViewSafe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="First Name"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMiddleName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Middle Name"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Last Name"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextMiddleName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextIDNumber"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="ID Number"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextParentNumber"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Parent's No. (11 Digits)"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextIDNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextParentNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Password (min 6 chars)"
+        android:inputType="textPassword"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDone"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Done"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#41817E"
+        app:cornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
