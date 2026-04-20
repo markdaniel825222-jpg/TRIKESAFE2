@@ -1,15 +1,30 @@
 # TRIKESAFE2
 
-### Project Definition
-A mobile security application designed to enhance the safety of commuters. The system allows users to log ride details and automatically notify guardians via SMS.
+## Features
+- Comprehensive safety features for trike riders.
+- User-friendly interface for easy navigation.
+- Customizable settings to fit individual preferences.
+- Real-time data tracking for safety metrics.
 
-### Key Features
-* **QR Code Integration:** Quick scanning for driver and vehicle identification.
-* **Guardian Notifications:** Automated SMS alerts using the Android SMS API.
-* **Data Management:** Secure storage of driver information and ride timestamps.
-* **Franchise Tracking:** Uses franchise numbers for accurate vehicle verification.
+## Setup Instructions
+1. Clone the repository:
+   ```
+   git clone https://github.com/markdaniel825222-jpg/TRIKESAFE2.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd TRIKESAFE2
+   ```
+3. Install the required dependencies:
+   ```
+   npm install
+   ```
+4. Start the application:
+   ```
+   npm start
+   ```
 
-### Tech Stack
-* **Language:** Java
-* **IDE:** Android Studio
-* **Backend:** Firebase (Authentication & Realtime Database)
+## Main Components
+- **Safety Monitoring Module:** Monitors rider safety and provides alerts.
+- **User Management System:** Handles user registration, login, and profile management.
+- **Data Visualization Dashboard:** Displays safety metrics in an easy-to-understand format.
